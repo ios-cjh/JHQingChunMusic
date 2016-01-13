@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JHPlayingViewController">
+            <connections>
+                <outlet property="currentTimeView" destination="Vu3-OA-ni1" id="MBz-NX-Esr"/>
+                <outlet property="durationLabel" destination="XdS-QP-nyB" id="0mE-lW-Rdz"/>
+                <outlet property="iconView" destination="3KT-UO-JtH" id="zIb-b8-5uD"/>
+                <outlet property="lrcView" destination="loO-eO-b5v" id="lXm-le-UCj"/>
+                <outlet property="playOrPauseButton" destination="bqb-Jt-AsL" id="HOD-XU-jq2"/>
+                <outlet property="progressView" destination="75b-6w-NNK" id="Bux-6N-Zik"/>
+                <outlet property="singerLabel" destination="jsb-ww-m4j" id="Khw-Sl-rkg"/>
+                <outlet property="slider" destination="tzZ-cW-C2K" id="NnY-WJ-VxO"/>
+                <outlet property="songLabel" destination="LRZ-QC-8ZZ" id="Uud-VQ-mvU"/>
+                <outlet property="view" destination="5Hb-VZ-Jjm" id="lvX-rQ-CMj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5Hb-VZ-Jjm">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWe-Rd-xGx" userLabel="顶部">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                    <subviews>
+                        <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play_cover_pic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-UO-JtH" userLabel="歌曲图片">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                        </imageView>
+                        <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pr5-MQ-xza" userLabel="名字背景">
+                            <rect key="frame" x="0.0" y="340" width="320" height="50"/>
+                            <subviews>
+                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRZ-QC-8ZZ" userLabel="歌曲名">
+                                    <rect key="frame" x="10" y="0.0" width="300" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-ww-m4j" userLabel="歌手名">
+                                    <rect key="frame" x="10" y="21" width="300" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button hidden="YES" appearanceType="aqua" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-OA-ni1" userLabel="显示拖拽进度">
+                            <rect key="frame" x="139" y="350" width="42" height="25"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="deviceRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="1:30">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <view hidden="YES" appearanceType="aqua" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loO-eO-b5v" userLabel="歌词显示控件" customClass="JHLrcView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETG-du-M85" userLabel="退出">
+                            <rect key="frame" x="10" y="30" width="42" height="48"/>
+                            <state key="normal" backgroundImage="quit">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Exit" destination="-1" eventType="touchUpInside" id="Cwy-ex-0Ga"/>
+                            </connections>
+                        </button>
+                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9T2-Cs-ngj" userLabel="词图">
+                            <rect key="frame" x="268" y="30" width="42" height="48"/>
+                            <state key="normal" backgroundImage="lyric_normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="pic_normal"/>
+                            <connections>
+                                <action selector="lyricOrPic:" destination="-1" eventType="touchUpInside" id="KHS-TM-w8h"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n57-Gd-J8u" userLabel="底部">
+                    <rect key="frame" x="0.0" y="385" width="320" height="95"/>
+                    <subviews>
+                        <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kx-FB-dCP" userLabel="播放控制面板">
+                            <rect key="frame" x="0.0" y="15" width="320" height="80"/>
+                            <subviews>
+                                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqb-Jt-AsL" userLabel="播放">
+                                    <rect key="frame" x="124" y="17" width="72" height="46"/>
+                                    <state key="normal" backgroundImage="play">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="pause"/>
+                                    <connections>
+                                        <action selector="playOrPause" destination="-1" eventType="touchUpInside" id="0Up-K9-N6O"/>
+                                    </connections>
+                                </button>
+                                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BP-1y-Hq2" userLabel="上一首">
+                                    <rect key="frame" x="68" y="17" width="41" height="46"/>
+                                    <state key="normal" backgroundImage="previous">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="previous" destination="-1" eventType="touchUpInside" id="Wtg-RV-9V3"/>
+                                    </connections>
+                                </button>
+                                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-Wt-Kgz" userLabel="下一首">
+                                    <rect key="frame" x="211" y="17" width="41" height="46"/>
+                                    <state key="normal" backgroundImage="next">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="next" destination="-1" eventType="touchUpInside" id="clO-PC-Wxd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OtS-26-aET" userLabel="进度条背景">
+                            <rect key="frame" x="0.0" y="5" width="320" height="10"/>
+                            <subviews>
+                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdS-QP-nyB" userLabel="时长">
+                                    <rect key="frame" x="273" y="0.0" width="42" height="10"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75b-6w-NNK" userLabel="进度条">
+                                    <rect key="frame" x="0.0" y="0.0" width="21" height="10"/>
+                                    <color key="backgroundColor" red="0.062745098040000002" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.79215686269999996" green="0.81176470590000005" blue="0.85882352939999995" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="5GF-nV-3aH" appends="YES" id="srV-aX-pJS"/>
+                            </connections>
+                        </view>
+                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzZ-cW-C2K" userLabel="滑块">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" backgroundImage="process_thumb">
+                                <color key="titleColor" red="0.33725490200000002" green="0.37647058820000001" blue="0.44705882349999998" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="P88-aj-itQ" appends="YES" id="EVN-Jp-RB5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="P88-aj-itQ">
+            <connections>
+                <action selector="panSlider:" destination="-1" id="J9C-Dn-6SQ"/>
+            </connections>
+        </panGestureRecognizer>
+        <tapGestureRecognizer id="5GF-nV-3aH">
+            <connections>
+                <action selector="tapProgressBg:" destination="-1" id="awd-dr-li6"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="lyric_normal" width="41" height="48"/>
+        <image name="next" width="41" height="46"/>
+        <image name="pause" width="72" height="46"/>
+        <image name="pic_normal" width="41" height="48"/>
+        <image name="play" width="72" height="46"/>
+        <image name="play_cover_pic_bg" width="320" height="320"/>
+        <image name="previous" width="41" height="46"/>
+        <image name="process_thumb" width="41" height="21"/>
+        <image name="quit" width="41" height="48"/>
+    </resources>
+</document>
