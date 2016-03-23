@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078FE43A1CA28002007FCE55 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE4391CA28002007FCE55 /* JHNavigationController.m */; };
+		078FE43E1CA283CD007FCE55 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE43D1CA283CD007FCE55 /* UIBarButtonItem+Extension.m */; };
+		078FE4411CA28953007FCE55 /* JHVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE4401CA28953007FCE55 /* JHVideoController.m */; };
 		07BC1E8F1BC11A0E0025B777 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BC1E8E1BC11A0E0025B777 /* Foundation.framework */; };
 		07BC1E911BC11A0E0025B777 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BC1E901BC11A0E0025B777 /* CoreGraphics.framework */; };
 		07BC1E931BC11A0E0025B777 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BC1E921BC11A0E0025B777 /* UIKit.framework */; };
@@ -83,6 +86,7 @@
 		07E26D3E1BC12B1A0043C153 /* JHPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E26D3C1BC12B1A0043C153 /* JHPlayingViewController.xib */; };
 		07E26D421BC162680043C153 /* JHMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E26D411BC162680043C153 /* JHMusicTool.m */; };
 		07E26D451BC2718B0043C153 /* JHAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E26D441BC2718B0043C153 /* JHAudioTool.m */; };
+		07F64F5D1CA2996300F42DCB /* JHIntroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F64F5C1CA2996300F42DCB /* JHIntroController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,18 +100,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07BC1E8B1BC11A0E0025B777 /* 百度音乐OFJH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百度音乐OFJH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		078FE4381CA28002007FCE55 /* JHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
+		078FE4391CA28002007FCE55 /* JHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
+		078FE43C1CA283CD007FCE55 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		078FE43D1CA283CD007FCE55 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		078FE43F1CA28953007FCE55 /* JHVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHVideoController.h; sourceTree = "<group>"; };
+		078FE4401CA28953007FCE55 /* JHVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHVideoController.m; sourceTree = "<group>"; };
+		07BC1E8B1BC11A0E0025B777 /* 青春音乐OFJH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "青春音乐OFJH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BC1E8E1BC11A0E0025B777 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07BC1E901BC11A0E0025B777 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		07BC1E921BC11A0E0025B777 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		07BC1E961BC11A0E0025B777 /* 百度音乐OFJH-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "百度音乐OFJH-Info.plist"; sourceTree = "<group>"; };
+		07BC1E961BC11A0E0025B777 /* 青春音乐OFJH-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "青春音乐OFJH-Info.plist"; sourceTree = "<group>"; };
 		07BC1E981BC11A0E0025B777 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		07BC1E9C1BC11A0E0025B777 /* 百度音乐OFJH-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "百度音乐OFJH-Prefix.pch"; sourceTree = "<group>"; };
+		07BC1E9C1BC11A0E0025B777 /* 青春音乐OFJH-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "青春音乐OFJH-Prefix.pch"; sourceTree = "<group>"; };
 		07BC1EA11BC11A0E0025B777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07BC1EA61BC11A0E0025B777 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		07BC1EAC1BC11A0E0025B777 /* 百度音乐OFJHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百度音乐OFJHTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07BC1EAC1BC11A0E0025B777 /* 青春音乐OFJHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "青春音乐OFJHTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BC1EAD1BC11A0E0025B777 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		07BC1EB51BC11A0E0025B777 /* 百度音乐OFJHTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "百度音乐OFJHTests-Info.plist"; sourceTree = "<group>"; };
+		07BC1EB51BC11A0E0025B777 /* 青春音乐OFJHTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "青春音乐OFJHTests-Info.plist"; sourceTree = "<group>"; };
 		07BC1EB71BC11A0E0025B777 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07BC1EB91BC11A0E0025B777 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
 		07DFE9E31BC7FFCB00A8DEAC /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
@@ -202,6 +212,8 @@
 		07E26D411BC162680043C153 /* JHMusicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMusicTool.m; sourceTree = "<group>"; };
 		07E26D431BC2718B0043C153 /* JHAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAudioTool.h; sourceTree = "<group>"; };
 		07E26D441BC2718B0043C153 /* JHAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAudioTool.m; sourceTree = "<group>"; };
+		07F64F5B1CA2996300F42DCB /* JHIntroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHIntroController.h; sourceTree = "<group>"; };
+		07F64F5C1CA2996300F42DCB /* JHIntroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHIntroController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +253,8 @@
 		07BC1E8C1BC11A0E0025B777 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07BC1E8B1BC11A0E0025B777 /* 百度音乐OFJH.app */,
-				07BC1EAC1BC11A0E0025B777 /* 百度音乐OFJHTests.xctest */,
+				07BC1E8B1BC11A0E0025B777 /* 青春音乐OFJH.app */,
+				07BC1EAC1BC11A0E0025B777 /* 青春音乐OFJHTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,9 +285,9 @@
 			isa = PBXGroup;
 			children = (
 				07E26CB61BC11C570043C153 /* Resources */,
-				07BC1E961BC11A0E0025B777 /* 百度音乐OFJH-Info.plist */,
+				07BC1E961BC11A0E0025B777 /* 青春音乐OFJH-Info.plist */,
 				07BC1E971BC11A0E0025B777 /* InfoPlist.strings */,
-				07BC1E9C1BC11A0E0025B777 /* 百度音乐OFJH-Prefix.pch */,
+				07BC1E9C1BC11A0E0025B777 /* 青春音乐OFJH-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -292,7 +304,7 @@
 		07BC1EB41BC11A0E0025B777 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				07BC1EB51BC11A0E0025B777 /* 百度音乐OFJHTests-Info.plist */,
+				07BC1EB51BC11A0E0025B777 /* 青春音乐OFJHTests-Info.plist */,
 				07BC1EB61BC11A0E0025B777 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -330,6 +342,8 @@
 				07E26D381BC12ADC0043C153 /* UIView+Extension.m */,
 				07E26D341BC1296D0043C153 /* UIImage+MJ.h */,
 				07E26D351BC1296D0043C153 /* UIImage+MJ.m */,
+				078FE43C1CA283CD007FCE55 /* UIBarButtonItem+Extension.h */,
+				078FE43D1CA283CD007FCE55 /* UIBarButtonItem+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -342,6 +356,12 @@
 				07E26D3A1BC12B1A0043C153 /* JHPlayingViewController.h */,
 				07E26D3B1BC12B1A0043C153 /* JHPlayingViewController.m */,
 				07E26D3C1BC12B1A0043C153 /* JHPlayingViewController.xib */,
+				078FE4381CA28002007FCE55 /* JHNavigationController.h */,
+				078FE4391CA28002007FCE55 /* JHNavigationController.m */,
+				078FE43F1CA28953007FCE55 /* JHVideoController.h */,
+				078FE4401CA28953007FCE55 /* JHVideoController.m */,
+				07F64F5B1CA2996300F42DCB /* JHIntroController.h */,
+				07F64F5C1CA2996300F42DCB /* JHIntroController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -511,9 +531,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07BC1E8A1BC11A0E0025B777 /* 百度音乐OFJH */ = {
+		07BC1E8A1BC11A0E0025B777 /* 青春音乐OFJH */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07BC1EBD1BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "百度音乐OFJH" */;
+			buildConfigurationList = 07BC1EBD1BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "青春音乐OFJH" */;
 			buildPhases = (
 				07BC1E871BC11A0E0025B777 /* Sources */,
 				07BC1E881BC11A0E0025B777 /* Frameworks */,
@@ -523,14 +543,14 @@
 			);
 			dependencies = (
 			);
-			name = "百度音乐OFJH";
+			name = "青春音乐OFJH";
 			productName = "百度音乐";
-			productReference = 07BC1E8B1BC11A0E0025B777 /* 百度音乐OFJH.app */;
+			productReference = 07BC1E8B1BC11A0E0025B777 /* 青春音乐OFJH.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07BC1EAB1BC11A0E0025B777 /* 百度音乐OFJHTests */ = {
+		07BC1EAB1BC11A0E0025B777 /* 青春音乐OFJHTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07BC1EC01BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "百度音乐OFJHTests" */;
+			buildConfigurationList = 07BC1EC01BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "青春音乐OFJHTests" */;
 			buildPhases = (
 				07BC1EA81BC11A0E0025B777 /* Sources */,
 				07BC1EA91BC11A0E0025B777 /* Frameworks */,
@@ -541,9 +561,9 @@
 			dependencies = (
 				07BC1EB21BC11A0E0025B777 /* PBXTargetDependency */,
 			);
-			name = "百度音乐OFJHTests";
+			name = "青春音乐OFJHTests";
 			productName = "百度音乐Tests";
-			productReference = 07BC1EAC1BC11A0E0025B777 /* 百度音乐OFJHTests.xctest */;
+			productReference = 07BC1EAC1BC11A0E0025B777 /* 青春音乐OFJHTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -561,7 +581,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07BC1E861BC11A0E0025B777 /* Build configuration list for PBXProject "百度音乐OFJH" */;
+			buildConfigurationList = 07BC1E861BC11A0E0025B777 /* Build configuration list for PBXProject "青春音乐OFJH" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -574,8 +594,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07BC1E8A1BC11A0E0025B777 /* 百度音乐OFJH */,
-				07BC1EAB1BC11A0E0025B777 /* 百度音乐OFJHTests */,
+				07BC1E8A1BC11A0E0025B777 /* 青春音乐OFJH */,
+				07BC1EAB1BC11A0E0025B777 /* 青春音乐OFJHTests */,
 			);
 		};
 /* End PBXProject section */
@@ -645,6 +665,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E26D301BC120450043C153 /* NSObject+MJMember.m in Sources */,
+				078FE43A1CA28002007FCE55 /* JHNavigationController.m in Sources */,
 				07DFE9F11BC9411D00A8DEAC /* JHLrcCell.m in Sources */,
 				07E26D2E1BC120450043C153 /* NSObject+MJCoding.m in Sources */,
 				07E26D291BC120450043C153 /* MJIvar.m in Sources */,
@@ -654,15 +675,18 @@
 				07DFE9E81BC7FFCB00A8DEAC /* UIImage+BoxBlur.m in Sources */,
 				07E26D331BC124AC0043C153 /* JHMusicCell.m in Sources */,
 				07E26D391BC12ADC0043C153 /* UIView+Extension.m in Sources */,
+				078FE4411CA28953007FCE55 /* JHVideoController.m in Sources */,
 				07E26D251BC120450043C153 /* Colours.m in Sources */,
 				07E26D261BC120450043C153 /* MJArgument.m in Sources */,
 				07E26D3D1BC12B1A0043C153 /* JHPlayingViewController.m in Sources */,
 				07E26D271BC120450043C153 /* MJConst.m in Sources */,
 				07E26D2C1BC120450043C153 /* MJType.m in Sources */,
+				07F64F5D1CA2996300F42DCB /* JHIntroController.m in Sources */,
 				07E26CB21BC11BA50043C153 /* JHAppDelegate.m in Sources */,
 				07DFE9EB1BC8000A00A8DEAC /* JHLrcView.m in Sources */,
 				07E26CB31BC11BA50043C153 /* main.m in Sources */,
 				07DFE9EE1BC902EF00A8DEAC /* JHLrcLine.m in Sources */,
+				078FE43E1CA283CD007FCE55 /* UIBarButtonItem+Extension.m in Sources */,
 				07E26D061BC11ECB0043C153 /* JHMusicsViewController.m in Sources */,
 				07DFE9E71BC7FFCB00A8DEAC /* DRNRealTimeBlurView.m in Sources */,
 				07E26D451BC2718B0043C153 /* JHAudioTool.m in Sources */,
@@ -687,7 +711,7 @@
 /* Begin PBXTargetDependency section */
 		07BC1EB21BC11A0E0025B777 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07BC1E8A1BC11A0E0025B777 /* 百度音乐OFJH */;
+			target = 07BC1E8A1BC11A0E0025B777 /* 青春音乐OFJH */;
 			targetProxy = 07BC1EB11BC11A0E0025B777 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -796,9 +820,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "百度音乐/百度音乐OFJH-Prefix.pch";
-				INFOPLIST_FILE = "百度音乐/百度音乐OFJH-Info.plist";
-				PRODUCT_NAME = "百度音乐OFJH";
+				GCC_PREFIX_HEADER = "百度音乐/青春音乐OFJH-Prefix.pch";
+				INFOPLIST_FILE = "百度音乐/青春音乐OFJH-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "青春音乐OFJH";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -809,9 +834,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "百度音乐/百度音乐OFJH-Prefix.pch";
-				INFOPLIST_FILE = "百度音乐/百度音乐OFJH-Info.plist";
-				PRODUCT_NAME = "百度音乐OFJH";
+				GCC_PREFIX_HEADER = "百度音乐/青春音乐OFJH-Prefix.pch";
+				INFOPLIST_FILE = "百度音乐/青春音乐OFJH-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "青春音乐OFJH";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -831,8 +857,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "百度音乐Tests/百度音乐OFJHTests-Info.plist";
-				PRODUCT_NAME = "百度音乐OFJHTests";
+				INFOPLIST_FILE = "百度音乐Tests/青春音乐OFJHTests-Info.plist";
+				PRODUCT_NAME = "青春音乐OFJHTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -849,8 +875,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百度音乐/百度音乐-Prefix.pch";
-				INFOPLIST_FILE = "百度音乐Tests/百度音乐OFJHTests-Info.plist";
-				PRODUCT_NAME = "百度音乐OFJHTests";
+				INFOPLIST_FILE = "百度音乐Tests/青春音乐OFJHTests-Info.plist";
+				PRODUCT_NAME = "青春音乐OFJHTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -859,7 +885,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07BC1E861BC11A0E0025B777 /* Build configuration list for PBXProject "百度音乐OFJH" */ = {
+		07BC1E861BC11A0E0025B777 /* Build configuration list for PBXProject "青春音乐OFJH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07BC1EBB1BC11A0E0025B777 /* Debug */,
@@ -868,7 +894,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07BC1EBD1BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "百度音乐OFJH" */ = {
+		07BC1EBD1BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "青春音乐OFJH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07BC1EBE1BC11A0E0025B777 /* Debug */,
@@ -877,7 +903,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07BC1EC01BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "百度音乐OFJHTests" */ = {
+		07BC1EC01BC11A0E0025B777 /* Build configuration list for PBXNativeTarget "青春音乐OFJHTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07BC1EC11BC11A0E0025B777 /* Debug */,

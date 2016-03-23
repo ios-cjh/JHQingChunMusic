@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class JHMusic;
 @interface JHMusicTool : NSObject
-
+// 提供类方法
 /**
  *  返回所有的歌曲
  */
@@ -20,7 +20,7 @@
  *  返回正在的歌曲
  */
 + (JHMusic *) playingMusic;
-// 我要播放哪一首 别人告诉我
+// 我要播放哪一首 提供外界接口
 + (void) setPlayingMusic:(JHMusic *)playingMusic;
 
 

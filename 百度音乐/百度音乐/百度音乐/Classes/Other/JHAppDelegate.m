@@ -7,12 +7,25 @@
 //
 
 #import "JHAppDelegate.h"
+#import "JHMusicsViewController.h"
+#import "JHNavigationController.h"
 
 @implementation JHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    // 3.添加子控制器到导航控制器中
+    JHMusicsViewController *musicVc = [[JHMusicsViewController alloc] init];
+    // 1. 创建导航控制器
+    JHNavigationController *nav = [[JHNavigationController alloc] initWithRootViewController:musicVc];
+    // 2.设置window的根控制器
+    self.window.rootViewController = nav;
+    
+    
+    // 4.显示window
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
@@ -28,7 +41,6 @@
     UIBackgroundTaskIdentifier taskId = [application beginBackgroundTaskWithExpirationHandler:^{
         [application endBackgroundTask:taskId];
     }];
-
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

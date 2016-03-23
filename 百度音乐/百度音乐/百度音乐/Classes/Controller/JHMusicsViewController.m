@@ -12,9 +12,14 @@
 #import "JHMusicCell.h"
 #import "JHPlayingViewController.h"
 #import "JHMusicTool.h"
+#import "JHVideoController.h"
+#import "JHNavigationController.h"
+#import "JHIntroController.h"
+
 
 @interface JHMusicsViewController ()
 @property (nonatomic, strong) JHPlayingViewController *playingVc;
+@property (nonatomic, weak) JHIntroController *intro;
 @end
 
 @implementation JHMusicsViewController
@@ -31,7 +36,43 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"青春音乐";
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:self action:nil];
+    
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"sidebar_nav_video" target:self action:@selector(rightClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"sidebar_nav_news" target:self action:@selector(leftClick)];
 }
+
+-(void)rightClick
+{
+    JHVideoController *vc = [[JHVideoController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)leftClick
+{
+    UIButton *btn = [[UIButton alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
+    
+    [window addSubview:btn];
+
+    
+}
+
+-(void)btnClick:(UIButton *)btn
+{
+    [btn removeFromSuperview];
+}
+
+// 隐藏状态栏
+//-(BOOL)prefersStatusBarHidden
+//{
+//    return YES;
+//}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -62,7 +103,6 @@
     
     // 3. 显示播放界面
     [self.playingVc show];
-    
 }
 @end
 

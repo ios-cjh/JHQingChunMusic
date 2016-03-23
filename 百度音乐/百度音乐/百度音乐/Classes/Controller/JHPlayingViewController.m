@@ -123,6 +123,7 @@
     CGFloat sliderMaxX = self.view.width - self.slider.width;
     self.slider.x = progress * sliderMaxX;
     
+    // 设置滑块滑动时间
     [self.slider setTitle:[self strWithTime:self.player.currentTime] forState:UIControlStateNormal];
     
     // 设置蓝色进度条的宽度
@@ -140,7 +141,6 @@
     
     self.lrcTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateLrc)];
     [self.lrcTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-    
     
 }
 
@@ -232,7 +232,7 @@
  */
 - (void)updateLockedScreenMusic
 {
-    // 播放信心中心
+    // 播放信息中心
     MPNowPlayingInfoCenter *center = [MPNowPlayingInfoCenter defaultCenter];
     
     // 初始化播放信息
@@ -317,8 +317,7 @@
     self.player.currentTime = (point.x / sender.view.width) * self.player.duration;
     
     [self updateCurrentTime];
-    
-    
+
 }
 
 /**

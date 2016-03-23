@@ -51,7 +51,6 @@ static NSMutableDictionary *_musicPlayers;
         [player play];
     }
     return player;
-
 }
 
 /**
@@ -75,7 +74,6 @@ static NSMutableDictionary *_musicPlayers;
 /** 停止音乐*/
 + (void) stopMusic:(NSString *)filename
 {
-    
     if(filename == nil) return;
     
     // 取出对应的音乐播放器
