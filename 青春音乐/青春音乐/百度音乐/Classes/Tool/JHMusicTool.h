@@ -20,6 +20,7 @@
  *  返回正在的歌曲
  */
 + (JHMusic *) playingMusic;
+
 // 我要播放哪一首 提供外界接口
 + (void) setPlayingMusic:(JHMusic *)playingMusic;
 
