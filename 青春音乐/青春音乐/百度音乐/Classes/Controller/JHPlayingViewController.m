@@ -16,6 +16,7 @@
 
 @interface JHPlayingViewController () <AVAudioPlayerDelegate>
 - (IBAction)Exit;
+
 - (IBAction)lyricOrPic:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
 @property (weak, nonatomic) IBOutlet UILabel *songLabel;
